@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: overpass, 'sans-serif';
+}
+
+#container {
+    background-color:  hsl(217, 12%, 63%);
+    width: 375px;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.iconSvgContainer {
+    width: 3em;
+    height: 3em;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: hsl(216, 12%, 54%);
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    position: relative;
+    right: 2em;
+}
+p {
+   
+}
+.num-div-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.select-btn {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: overpass, 'sans-serif';
+}
+
+.select-btn:hover, .select-btn:focus {
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    transition: all .3s ease;
+}
+
+.submitbtn {
+    margin:  1.3em;
+    width: 335px;
+    height: 3em;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 3em;
+    font-family: overpass, 'sans-serif';
+}
+
+.submitbtn:hover {
+    background-color:  hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+#completed-div {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+    border-radius: 20px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.completed-div {
+    top: 50%;
+    transform: translate(-50%, -50%)  scale(1);
+    visibility: visible;
+}
