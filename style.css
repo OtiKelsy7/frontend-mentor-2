@@ -7,19 +7,20 @@
 }
 
 body {
-    background-color: rgb(20, 17, 17);
+    background-color: hsl(213, 19%, 18%);
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100%;
     align-items: center;
     flex-direction: column;
-    font-family: overpass, 'sans-serif';
+    font-family: 'Overpass', sans-serif;
 }
 
 #container {
-    background-color:  hsl(217, 12%, 63%);
+    background-color:  hsl(216, 12%, 8%);;
     width: 375px;
+    /* height: 370px; */
     border-radius: 1em;
     position: absolute;
     top: 50%;
@@ -33,7 +34,7 @@ body {
     height: 3em;
     margin-left: 20px;
     margin-top: 10px;
-    background-color: hsl(216, 12%, 54%);
+    background-color:  hsl(213, 19%, 18%);
     border-radius: 50%;
     display: grid;
     align-items: center;
@@ -46,6 +47,7 @@ img {
 }
 
 h1 {
+    color: hsl(0, 0%, 100%);
     position: relative;
     right: 2em;
 }
@@ -66,6 +68,8 @@ p {
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%) ;
     font-family: overpass, 'sans-serif';
 }
 
@@ -92,6 +96,43 @@ p {
 }
 
 #completed-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    background-color:  hsl(217, 12%, 63%);
+    width: 375px;
+    height: 370px;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    visibility: hidden;
+}
+
+#completed-div p {
+   margin-bottom: 5px;
+}
+
+.completed-btn {
+    margin:  1.3em;
+    width: 335px;
+    height: 3em;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 3em;
+    font-family: overpass, 'sans-serif';
+}
+
+.completed-btn:hover {
+        background-color:  hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+}
+
+.visible-pop {
     text-align: center;
     width: 300px;
     height: 300px;
@@ -100,13 +141,11 @@ p {
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50%, -50%) scale(0.);
+    transform: translate(-50%, -50%) scale(0.1);
     border-radius: 20px;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
-
-
 
 .visible-pop {
     top: 50%;
