@@ -21,6 +21,9 @@ body {
     background-color:  hsl(216, 12%, 8%);;
     width: 375px;
     /* height: 370px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 1em;
     position: absolute;
     top: 50%;
@@ -29,11 +32,16 @@ body {
     text-align: center;
 }
 
+.inner-container{
+    max-width: 300px;
+}
+
 .iconSvgContainer {
     width: 3em;
     height: 3em;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 10px;
+    margin-bottom: 15px;
     background-color:  hsl(213, 19%, 18%);
     border-radius: 50%;
     display: grid;
@@ -49,11 +57,9 @@ img {
 h1 {
     color: hsl(0, 0%, 100%);
     position: relative;
-    right: 2em;
+    right: 1em;
 }
-p {
-   
-}
+
 .num-div-container {
     display: flex;
     align-items: center;
@@ -67,9 +73,9 @@ p {
     border: none;
     cursor: pointer;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color:  hsl(0, 0%, 100%);
-    background-color: hsl(217, 12%, 63%) ;
+    background-color: hsl(213, 19%, 18%);
     font-family: overpass, 'sans-serif';
 }
 
@@ -80,14 +86,15 @@ p {
 }
 
 .submitbtn {
-    margin:  1.3em;
-    width: 335px;
+    margin-bottom: 1em;
+    width: 21.9em;
     height: 3em;
     color:  hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
     border: none;
     border-radius: 3em;
     font-family: overpass, 'sans-serif';
+    cursor: pointer;
 }
 
 .submitbtn:hover {
@@ -95,7 +102,7 @@ p {
     color: hsl(25, 97%, 53%);
 }
 
-#completed-div {
+/* #completed-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +117,7 @@ p {
     text-align: center;
     z-index: 999;
     visibility: hidden;
-}
+} */
 
 #completed-div p {
    margin-bottom: 5px;
@@ -128,11 +135,11 @@ p {
 }
 
 .completed-btn:hover {
-        background-color:  hsl(0, 0%, 100%);
-        color: hsl(25, 97%, 53%);
+    background-color:  hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
 }
 
-.visible-pop {
+#completed-div {
     text-align: center;
     width: 300px;
     height: 300px;
@@ -147,7 +154,7 @@ p {
     transition: transform 0.4s, top 0.4s;
 }
 
-.visible-pop {
+#completed-div .visible-pop {
     top: 50%;
     transform: translate(-50%, -50%)  scale(1);
     visibility: visible;
