@@ -58,17 +58,19 @@ h1 {
     color: hsl(0, 0%, 100%);
     position: relative;
     right: 1em;
+    margin-bottom: 10px;
 }
 
 .num-div-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    max-width: 300px;
 }
 
 .select-btn {
-    height: 3.5em;
-    width: 3.5em;
+    height: 3.9em;
+    width: 3.9em;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -79,10 +81,20 @@ h1 {
     font-family: overpass, 'sans-serif';
 }
 
-.select-btn:hover, .select-btn:focus {
+p {
+    color:  hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.select-btn:hover {
     color:  hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
     transition: all .3s ease;
+}
+
+.select-btn:focus {
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
 }
 
 .submitbtn {
@@ -94,7 +106,10 @@ h1 {
     border: none;
     border-radius: 3em;
     font-family: overpass, 'sans-serif';
+    font-weight: 700;
+    font-size: 100;
     cursor: pointer;
+    letter-spacing: .2em;
 }
 
 .submitbtn:hover {
@@ -122,7 +137,6 @@ div .visible-div {
     top: 50%;
     transform: translate(-50%, -50%)  scale(1);
     visibility: visible;
-    display: block;
 }
 
 #completed-div p {
