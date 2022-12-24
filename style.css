@@ -114,13 +114,15 @@ h1 {
     transform: translate(-50%, -50%) scale(0.1);
     border-radius: 20px;
     visibility: hidden;
+    display: none;
     transition: transform 0.4s, top 0.4s;
 }
 
-div .visible-pop {
+div .visible-div {
     top: 50%;
     transform: translate(-50%, -50%)  scale(1);
     visibility: visible;
+    display: block;
 }
 
 #completed-div p {
