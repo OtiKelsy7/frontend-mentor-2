@@ -171,9 +171,20 @@ div .visible-div {
 }
 
 .interactive-div {
-    width: 5px;
-    height: 5px;
+    width: 100%;
+    height: 100%;
     background-color: white;
+    text-align: center;
+}
+
+.apptext {
+    color: hsl(25, 97%, 53%);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.first {
+    margin-right: 5px;
 }
 
  .completed-btn  {

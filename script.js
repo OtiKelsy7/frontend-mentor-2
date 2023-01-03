@@ -1,9 +1,7 @@
 //initial references
 const pop_up = document.getElementById("completed-div");
 
-const submitBtn = document.getElementById("submitButton");
-
-const numDiv = document.getElementById("number-selection");
+const selectDiv = document.getElementById("number-selection");
 
 const intDiv = document.getElementById("interactive-div");
 
@@ -17,36 +15,9 @@ function closeBtn() {
     pop_up.classList.remove('visible-div')
 }
 
-submitBtn.addEventListener("click", () => {
-    console.log("submit button clicked")
-})
-
-numDiv.addEventListener("click", () => {
-    console.log("selected button clicked")
-})
-
-// numDiv.addEventListener("click", () => {
-//     console.log("button 1 clicked")
-// })
-// numDiv.addEventListener("click", () => {
-//     console.log("button 2 clicked")
-// })
-// numDiv.addEventListener("click", () => {
-//     console.log("button 3 clicked")
-// })
-// numDiv.addEventListener("click", () => {
-//     console.log("button 4 clicked")
-// })
-
-
-// function closeBtn() {
-//     pop_up.classList.remove("visible-div")
-// };
-
-function numFunc(num) {
-    return num;
-}
-
-console.log(numFunc())
-
+['b1', 'b2', 'b3', 'b4', 'b5'].forEach(id => { 
+   document.getElementById(id).addEventListener('click', () => {
+   intDiv.innerHTML = id;
+  }); 
+});
 //functionalities end
