@@ -128,7 +128,6 @@ p {
     top: 0;
     transform: translate(-50%, -50%) scale(0.1);
     border-radius: 20px;
-    visibility: hidden;
     display: none;
     transition: transform 0.4s, top 0.4s;
 }
@@ -138,6 +137,15 @@ div .visible-div {
     transform: translate(-50%, -50%)  scale(1);
     visibility: visible;
 }
+
+/*Class that will override your previous declared css rule*/
+.visible-div {
+    display: block!important;
+    top: 50%!important;
+    transform: translate(-50%, -50%)  scale(1)!important;
+    visibility: visible!important;
+}
+
 
 #completed-div p {
    margin-bottom: 5px;
