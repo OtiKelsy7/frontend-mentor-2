@@ -13,6 +13,10 @@ function openBtn() {
     pop_up.classList.add('visible-div')
 }
 
+function closeBtn() {
+    pop_up.classList.remove('visible-div')
+}
+
 submitBtn.addEventListener("click", () => {
     console.log("submit button clicked")
 })
