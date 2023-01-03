@@ -1,5 +1,5 @@
 //initial references
-const PopUp = document.getElementById("completed-div");
+const pop_up = document.getElementById("completed-div");
 
 const submitBtn = document.getElementById("submitButton");
 
@@ -10,7 +10,7 @@ const intDiv = document.getElementById("interactive-div");
 
 //functionalities start
 function openBtn() {
-    PopUp.classList.add("visible-div")
+    pop_up.classList.add('visible-div')
 }
 
 submitBtn.addEventListener("click", () => {
@@ -36,7 +36,7 @@ numDiv.addEventListener("click", () => {
 
 
 // function closeBtn() {
-//     PopUp.classList.remove("visible-div")
+//     pop_up.classList.remove("visible-div")
 // };
 
 function numFunc(num) {
