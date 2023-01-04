@@ -3,6 +3,8 @@ const pop_up = document.getElementById("completed-div");
 
 const selectDiv = document.getElementById("number-selection");
 
+const numbers = document.querySelectorAll(".select-btn");
+
 const intDiv = document.getElementById("interactive-div");
 
 
@@ -15,9 +17,9 @@ function closeBtn() {
     pop_up.classList.remove('visible-div')
 }
 
-['b1', 'b2', 'b3', 'b4', 'b5'].forEach(id => { 
-   document.getElementById(id).addEventListener('click', () => {
-   intDiv.innerHTML = id;
+numbers.forEach(e => { 
+   e.addEventListener('click', () => {
+     intDiv.innerText = e.textContent;
   }); 
 });
 //functionalities end
